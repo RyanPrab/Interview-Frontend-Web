@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Layout from '/components/Layout';
 import Table from '/components/Table';
+import Footer from '../components/Footer';
 
 export default function Home(props) {
   const { product } = props;
@@ -14,6 +15,7 @@ export default function Home(props) {
 
       <div className="flex flex-col items-center flex-1 flex-shrink-0 bg-gray-100">
         <Table product={product} title='Question 1' noSearch={true}/>
+        <Footer/>
       </div>
     </Layout>
   )
